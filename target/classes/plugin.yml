@@ -1,0 +1,28 @@
+name: CookieGiver
+version: $1.2.4
+main: io.github.talonm4.CookieGiver
+api-version: 1.13
+commands:
+  cookie:
+    description: Gives cookies!
+    usage: /cookie
+
+  cookieparty:
+    description: gives everyone cookies and milk!
+    usage: /cookieparty
+    permission: cookielord.party
+
+  fly:
+    description: gives flight like an osprey
+    usage: /fly
+    permission: cookielord.fly
+
+
+
+permissions:
+  cookielord.*:
+    description: You are the cookielord now!
+    children:
+     cookielord.party: true
+     cookielord.fly: true
+
